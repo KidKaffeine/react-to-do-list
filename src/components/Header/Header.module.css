@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+.appTitle {
+  color: yellow;
+  font-size: 56px;
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 20px;
+}
