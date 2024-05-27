@@ -16,7 +16,7 @@ export default function Navbar() {
           <ListItem key="starIcon">
             <FontAwesomeIcon
               icon={faStar}
-              size="3x"
+              size="2x"
               className={styles.navIcons}
             />
           </ListItem>
@@ -24,7 +24,7 @@ export default function Navbar() {
             <Link to="/addTask">
               <FontAwesomeIcon
                 icon={faPlusCircle}
-                size="3x"
+                size="2x"
                 beatFade
                 className={styles.navIcons}
                 color="yellow"
@@ -34,7 +34,7 @@ export default function Navbar() {
           <ListItem key="searchIcon">
             <FontAwesomeIcon
               icon={faMagnifyingGlass}
-              size="3x"
+              size="2x"
               className={styles.navIcons}
             />
           </ListItem>
