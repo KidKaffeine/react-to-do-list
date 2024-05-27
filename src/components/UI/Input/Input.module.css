@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.addTaskInput, 
+.dateInput {
+background-color: transparent;
+border: solid 1px yellow;
+border-radius: 7px;
+height: 30px;
+}
