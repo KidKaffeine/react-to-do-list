@@ -6,13 +6,9 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import ListItem from "../UI/ListItem/ListItem";
-import Modal from "../Modal/Modal";
-import { useState } from "react";
-import { createPortal } from "react-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <>
       <nav className={styles.navBar}>
@@ -25,14 +21,15 @@ export default function Navbar() {
             />
           </ListItem>
           <ListItem key="addIcon">
-            <FontAwesomeIcon
-              icon={faPlusCircle}
-              size="3x"
-              beatFade
-              className={styles.navIcons}
-              color="yellow"
-              onClick={() => setIsOpen(true)}
-            />
+            <Link to="/addTask">
+              <FontAwesomeIcon
+                icon={faPlusCircle}
+                size="3x"
+                beatFade
+                className={styles.navIcons}
+                color="yellow"
+              />
+            </Link>
           </ListItem>
           <ListItem key="searchIcon">
             <FontAwesomeIcon
@@ -43,8 +40,6 @@ export default function Navbar() {
           </ListItem>
         </ul>
       </nav>
-      {isOpen &&
-        createPortal(<Modal closeModal={() => setIsOpen(false)} />, document.body)}
     </>
   );
 }
