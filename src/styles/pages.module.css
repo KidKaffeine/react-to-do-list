@@ -1,37 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 
 body {
-    margin: 0;
-    background-color: rgb(240, 11, 171);
-  }
-  
-  .root {
-    box-sizing: border-box;
-    min-height: 100vh;
-  }
+  margin: 0;
+  background-color: rgb(240, 11, 171);
+}
 
+.root {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.addTaskForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 20px;
+  width: 75%;
+  border: solid 1px yellow;
+  border-radius: 10px;
+}
+
+.addTaskForm > * {
+  margin-bottom: 7px;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 75%;
+}
+
+.taskCategory {
+  background-color: transparent;
+  border: solid 1px yellow;
+  border-radius: 7px;
+  height: 30px;
+}
+
+.errorHeader,
+.errorLink {
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.errorHeader {
+  margin: 0 0 50px 35px;
+}
+
+.errorLink {
+  text-decoration: none;
+  color: #000;
+  margin-right: 20px;
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+}
+
+.errorSpan {
+  margin-left: 15px;
+}
+
+
+@media only screen and (min-width: 600px) {
   .addTaskForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 45px 20px;
-    width: 75%;
-    border: solid 1px yellow;
-    border-radius: 10px;
+    width: 50%;
+    margin-top: -200px;
   }
-
-  .addTaskForm > * {
-    margin-bottom: 7px;
-    font-family: "Abel", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    width: 75%;
-  }
-  
-  .taskCategory {
-    background-color: transparent;
-    border: solid 1px yellow;
-    border-radius: 7px;
-    height: 30px;
-  }
+}

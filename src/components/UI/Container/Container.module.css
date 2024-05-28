@@ -14,3 +14,12 @@
     justify-content: center;
     align-items: center;
   }
+
+  .errorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 120px;
+  }
