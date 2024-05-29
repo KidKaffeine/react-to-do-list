@@ -1,11 +1,14 @@
 import styles from "./Navbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlusCircle, faStar, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPlusCircle,
+  faStar,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
 import ListItem from "../UI/ListItem/ListItem";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
-
-
   return (
     <>
       <nav className={styles.navBar}>
@@ -13,23 +16,25 @@ export default function Navbar() {
           <ListItem key="starIcon">
             <FontAwesomeIcon
               icon={faStar}
-              size="3x"
+              size="2x"
               className={styles.navIcons}
             />
           </ListItem>
           <ListItem key="addIcon">
-            <FontAwesomeIcon
-              icon={faPlusCircle}
-              size="3x"
-              beatFade
-              className={styles.navIcons}
-              color="yellow"
-            />
+            <Link to="/addTask">
+              <FontAwesomeIcon
+                icon={faPlusCircle}
+                size="2x"
+                beatFade
+                className={styles.navIcons}
+                color="yellow"
+              />
+            </Link>
           </ListItem>
           <ListItem key="searchIcon">
             <FontAwesomeIcon
               icon={faMagnifyingGlass}
-              size="3x"
+              size="2x"
               className={styles.navIcons}
             />
           </ListItem>
